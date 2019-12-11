@@ -1,0 +1,25 @@
+# Hackerrank-Solutions
+Im Uploding Solution of Hackerrank Problems
+class Students:
+    dic={}
+    def __init__(self,numofstudent):
+        self.numofstudent=numofstudent
+    def add(self):
+        for i in range(0,self.numofstudent):
+            x,marks1,marks2,marks3=input().split(" ")
+            self.dic[x]=[marks1,marks2,marks3]
+            
+    def avg(self):
+        sum=0
+        avg=0
+        name=input()
+        for value in self.dic[name]:
+            sum=sum+float(value)
+        avg=sum/3
+        return "%.2f"%avg
+
+Number=int(input())
+s1=Students(Number)
+
+s1.add()
+print(s1.avg())
