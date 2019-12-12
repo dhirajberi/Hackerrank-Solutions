@@ -1,0 +1,15 @@
+
+name=input()
+
+print(any(map(str.isalnum,name)))
+print(any(map(str.isalpha,name)))
+print(any(map(str.isdigit,name)))
+print(any(map(str.islower,name)))
+print(any(map(str.isupper,name)))
+
+#here any function check and map is iterator so it iterate all values and find out
+if name[i]==name.isalpha() then it will return True
+so on . . .
+. . . . 
+ . . . 
+ 
