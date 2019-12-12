@@ -1,0 +1,28 @@
+string=input()
+c=0
+x=0
+z=0
+l=0
+u=0
+
+for i in range(0,len(string)):
+    if(string[i].isalnum()==True):
+        c=c+1
+
+    if(string[i].isalpha()==True):
+        x=x+1
+    if(string[i].isdigit()==True):
+        z=z+1
+    if(string[i].islower()==True):
+        l=l+1
+    if(string[i].isupper()==True):
+        u=u+1
+    
+
+        
+
+print(c!=0)
+print(x!=0)
+print(z!=0)
+print(l!=0)
+print(u!=0)
