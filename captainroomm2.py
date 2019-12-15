@@ -1,0 +1,5 @@
+n=int(input())
+grp=list(map(int,input().split(" ")))
+s=set(grp)
+sum1=sum(s)*n-sum(grp)
+print(sum1//(n-1))
