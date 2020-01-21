@@ -1,0 +1,23 @@
+from collections import Counter
+
+n=int(input())
+
+mylist=[int (i) for i in input().split(" ")]
+
+data=Counter(mylist)
+
+cs=int(input())
+
+sum=0
+
+mydata=list(data.elements())
+
+for i in range(0,cs):
+    x,y=input().split()
+    if int(x) in mydata:
+        mydata.remove(int(x))
+        sum=sum+int(y)
+        
+print(sum)
+        
+
